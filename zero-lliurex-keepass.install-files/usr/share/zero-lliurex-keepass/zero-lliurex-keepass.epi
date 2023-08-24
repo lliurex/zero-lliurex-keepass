@@ -1,0 +1,13 @@
+{
+    "type":"mix",
+    "pkg_list": [
+        {"name":"keepass2","custom_name":"Keepass password manager","custom_icon":"keepass.png","type":"apt","key_store":"keepass2","addRepoKeys":false,"getStatus":false,"remove":true,"installPackage":false,"download":false,"preInstall":false,"postInstall":false},
+        {"name":"keepass2-plugin-keepasshttp","custom_name":"Keepass http connector","custom_icon":"keepass.png","type":"apt","key_store":"schoolmedia","addRepoKeys":false,"getStatus":false,"remove":true,"installPackage":false,"download":false,"preInstall":false,"postInstall":false}
+    ],
+    "repository": [
+    ],
+    "script": {"name":"/usr/share/zero-lliurex-keepass/zero-lliurex-keepass_script", "remove":true,"download":true,"getStatus":true},
+    "zomando":"zero-lliurex-keepass",
+    "custom_icon_path":"/usr/share/zero-lliurex-keepass/",
+    "selection_enabled":{"active":true,"all_selected":false}
+}

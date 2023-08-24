@@ -1,0 +1,17 @@
+Name=Keepass installer
+Name[es]=Instalador Keepass
+Name[en]=Keepass installer
+Name[qcv]=Instal·lador Keepass
+Name[ca_ES]=Instal·lador Keepass
+Comment=Install Keepass
+Comment[es]=Instala Keepass
+Comment[qcv]=Instal·la Keepass
+Comment[ca_ES]=Instal·la Keepass
+Icon=zero-lliurex-keepass
+Groups=*;
+Category=resources
+ScriptPath=zero-lliurex-keepass.zmd
+Using=pkexec
+Service=False
+Modal=True
+Locks=zero-lliurex-keepass
