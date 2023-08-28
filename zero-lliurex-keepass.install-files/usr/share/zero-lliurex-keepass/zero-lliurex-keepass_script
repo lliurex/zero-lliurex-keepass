@@ -45,6 +45,7 @@ case $ACTION in
 
     postInstall)
         echo "postInstall phase ..."
+        firefox 'https://addons.mozilla.org/ca/firefox/addon/keepasshttp-connector/' & disown $! || true
     ;;
 
     remove)
