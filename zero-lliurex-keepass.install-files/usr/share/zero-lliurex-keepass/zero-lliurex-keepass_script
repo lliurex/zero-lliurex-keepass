@@ -45,7 +45,17 @@ case $ACTION in
 
     postInstall)
         echo "postInstall phase ..."
-        firefox 'https://addons.mozilla.org/ca/firefox/addon/keepasshttp-connector/' & disown $! || true
+        for package in $PACKAGE_LIST; do
+            if [ "$package" == "keepass2-plugin-keepasshttp" ]; then
+                user="$(id -nu $PKEXEC_UID)"
+                existing="$(ps -u $user|grep firefox|xargs)"
+                if [ -z "$existing" ];then
+                    sudo -u $user bash /usr/share/zero-lliurex-keepass/new.sh || true
+                else
+                    sudo -u $user bash /usr/share/zero-lliurex-keepass/existing.sh || true
+                fi
+            fi
+        done
     ;;
 
     remove)
