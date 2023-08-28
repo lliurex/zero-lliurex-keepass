@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/lliurex/zero-lliurex-keepass
 
 Package: zero-lliurex-keepass
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, xsel, xdotool
 Description: Keepass Installer
  Installer for personal password manager Keepass
 
