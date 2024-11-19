@@ -1,3 +1,9 @@
+zero-lliurex-keepass (0.1) noble; urgency=medium
+
+  * Repackage from Jammy to noble
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 19 Nov 2024 11:21:45 +0100
+
 zero-lliurex-keepass (0.1) jammy; urgency=medium
 
   * Initial Release.
